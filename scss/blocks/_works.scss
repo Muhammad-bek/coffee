@@ -1,0 +1,131 @@
+.works__title {
+    margin: 0px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #83888F;
+    margin-top: 351px;
+    margin-bottom: 178px;
+    margin-left: 80px;
+}
+
+.works__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    width: 1045px;
+    margin-left: 80px;
+}
+
+.works__item-order {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+    margin: 0;
+}
+
+.works__list::before {
+    content: '';
+    display: block;
+    width: 760px;
+    height: 2px;
+    position: absolute;
+    background-color: #FDD6BA;
+    transform: translateY(-82px);
+}
+
+.works__item-title {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    width: 255px;
+    color: #333D4B;
+    margin: 0;
+    margin-top: 38px;
+    margin-bottom: 42px;
+}
+
+.works__item-description {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 285px;
+    color: #333D4B;
+    margin: 0;
+    margin-bottom: 79px;
+}
+
+.works__link {
+    text-decoration: none;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FEFCF7;
+    background: #0E8784;
+    border-radius: 6px;
+    padding: 15px 31px;
+    margin-left: 80px;
+}
+
+.works__item {
+    width: 300px;
+}
+
+.works__item::before {
+    content: '';
+    display: block;
+    border: 1px solid #0E8784;
+    border-radius: 65px;
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    transform: translateY(-98px);
+}
+
+@media only screen and (max-width: 1280px) {
+    .works__list {
+        max-width: 467px;
+    }
+
+    .works__item-title {
+        font-size: 28px;
+        line-height: 32px;
+        max-width: 223px;
+    }
+
+    .works__item-description {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 195px;
+    }
+
+    .works__item {
+        margin-right: 10px;
+    }
+
+    .works__list::before {
+        content: '';
+        display: block;
+        width: 467px;
+        height: 2px;
+        position: absolute;
+        background-color: #FDD6BA;
+        transform: translateY(-82px);
+    }
+
+}

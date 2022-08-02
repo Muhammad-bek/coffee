@@ -1,0 +1,77 @@
+.intro__text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 445px;
+    height: 78px;
+    color: grey;
+    margin: 0px;
+    display: block;
+    margin-bottom: 71px;
+}
+
+.intro__link {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEFCF7;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 15px 31px 16px 31px;
+    background-color: #0E8784;
+}
+
+.intro {
+    background-image: url(../../img/cup-of-coffee.jpg);
+    padding-top: 117px;
+    padding-left: 85px;
+    height: 600px;
+}
+
+.intro__title {
+    width: 493px; 
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0px;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .intro {
+        background: url(../../img/coffee.png) no-repeat center left;
+        padding: 0;
+    }
+
+    .intro__title  {
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+        width: 329px;
+        transform: translateY(150px);
+        display: block;
+        margin-left: 58px;
+        
+    }
+
+    .intro__text {
+        margin: 0;
+        margin-left: 58px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 180px;
+        max-width: 398px;
+        margin-bottom: 55px;
+    }
+
+    .intro__link {
+        margin-left: 58px;
+    }
+}

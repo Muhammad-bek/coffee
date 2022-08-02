@@ -1,0 +1,32 @@
+@mixin general {
+    background-color: #0E8784;
+    width: 350px;
+    height: 382px;
+}
+
+@mixin quality-sizes {
+    content: '';
+    display: block;
+    background: url(../../img/coffee.svg) no-repeat center center;
+    height: 72px;
+    margin-top: 72px;
+    margin-bottom: 51px;
+}
+
+@mixin exclusive-sizes {
+    content: '';
+    display: block;
+    background: url(../../img/exclusive.svg) no-repeat center center;
+    height: 72px;
+    margin-top: 72px;
+    margin-bottom: 51px;
+}
+
+@mixin shipping-sizes {
+    content: '';
+    display: block;
+    background: url(../../img/shipping.svg) no-repeat center center;
+    height: 72px;
+    margin-top: 72px;
+    margin-bottom: 51px;
+}
