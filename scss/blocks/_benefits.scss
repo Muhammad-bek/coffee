@@ -19,6 +19,7 @@
     margin-top: 200px;
     display: block;
     position: relative;
+    margin: 0 auto;
 }
 
 .benefits__description {
@@ -102,8 +103,10 @@
 
 @media only screen and (max-width: 1280px) {
     .benefits {
-        width: 688px;
-        height: 630px;
+      width: 688px;
+      height: 630px;
+      transform: translateX(215px);
+      
     }
 
     .benefits__description {
@@ -119,10 +122,10 @@
 
     .benefits__item--quality {
         display: flex;
-        min-width: 573px;
+        max-width: 573px;
         height: 100%;
         margin-bottom: 24px;
-        
+        width: 100%;
     }
 
     .benefits__item--quality::before {
@@ -185,7 +188,67 @@
     }
 
     .benefits__item-description {
-        width: 344px;
+        max-width: 344px;
     }
 
+}
+
+@media only screen and (max-width: 720px) {
+    .benefits {
+        max-width: 327px;
+        max-height: 902px;
+    }
+
+    .benefits__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .benefits__description {
+        margin: 0;
+        max-width: 290px;
+        text-align: center;
+        transform: translateX(20px);
+    }
+
+    .benefits__item {
+        flex-direction: column;
+        width: 279px;
+        height: 382px;
+        
+    }
+
+    .benefits__item-title {
+        text-align: center;
+    }
+
+    .benefits__item-description {
+        text-align: center;
+        max-width: 212px;
+        margin-left: 33px;
+    }
+
+    .benefits__list {
+        margin-left: 65px;
+    }
+
+    .benefits__wrapper {
+        margin: 0;
+    }
+
+    .benefits__item--quality::before {
+        display: block;
+        content: '';
+        margin-left: 110px;
+    }
+    .benefits__item--exclusive::before {
+        display: block;
+        content: '';
+        margin-left: 110px;
+    }
+    .benefits__item--shipping::before {
+        display: block;
+        content: '';
+        margin-left: 110px;
+    }
 }

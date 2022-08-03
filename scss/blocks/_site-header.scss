@@ -19,5 +19,15 @@
        
     }
 
+    .site-header {
+        transform: translateX(215px);
+    }
+
     
+}
+
+@media only screen and (max-width: 720px) {
+    .site-header__logo-img {
+        max-width: 162px;
+    }
 }

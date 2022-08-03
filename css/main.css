@@ -16,6 +16,14 @@
     margin-left: 100px;
     margin-top: 5px;
   }
+  .site-header {
+    transform: translateX(215px);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .site-header__logo-img {
+    max-width: 162px;
+  }
 }
 /* barlow-regular - latin */
 @font-face {
@@ -75,6 +83,16 @@
   padding: 0px;
 }
 
+@media only screen and (max-width: 720px) {
+  .site-header__nav {
+    background: url(../../img/menu.svg) no-repeat center center;
+    min-width: 16px;
+    margin-left: 150px;
+  }
+  .nav__list {
+    display: none;
+  }
+}
 .intro__text {
   font-family: "Barlow";
   font-style: normal;
@@ -125,6 +143,7 @@
   .intro {
     background: url(../../img/coffee.png) no-repeat center left;
     padding: 0;
+    transform: translateX(215px);
   }
   .intro__title {
     font-size: 48px;
@@ -146,6 +165,24 @@
   }
   .intro__link {
     margin-left: 58px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .intro {
+    background: url(../../img/intro-mobile.png) no-repeat center left;
+  }
+  .intro__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 40px;
+  }
+  .intro__text {
+    margin: 0;
+    max-width: 279px;
+    margin-left: 40px;
+    margin-top: 170px;
+    margin-bottom: 70px;
   }
 }
 .collection__title {
@@ -174,11 +211,10 @@
 .collection__table {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0px;
   margin: 0px;
-  width: 1129px;
-  margin-left: 75px;
+  margin-bottom: 188px;
   position: relative;
 }
 
@@ -221,6 +257,7 @@
   }
   .collection__item-list {
     display: flex;
+    margin: 0;
     margin-bottom: 47px;
   }
   .collection__description {
@@ -244,6 +281,37 @@
     margin-top: 30px;
     margin-left: 36px;
   }
+  .collection {
+    transform: translateX(200px);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .collection__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 72px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+  }
+  .collection__item-list {
+    flex-direction: column;
+  }
+  .collection__image {
+    max-width: 200px;
+    margin-left: 80px;
+  }
+  .collection__description {
+    text-align: center;
+  }
+  .collection__item-title {
+    text-align: center;
+  }
+  .collection__table {
+    flex-direction: column;
+  }
+  .collection__wrapper {
+    max-width: 282px;
+  }
 }
 .benefits__title {
   font-family: "Fraunces";
@@ -266,6 +334,7 @@
   margin-top: 200px;
   display: block;
   position: relative;
+  margin: 0 auto;
 }
 
 .benefits__description {
@@ -371,6 +440,7 @@
   .benefits {
     width: 688px;
     height: 630px;
+    transform: translateX(215px);
   }
   .benefits__description {
     transform: translateX(-310px);
@@ -382,9 +452,10 @@
   }
   .benefits__item--quality {
     display: flex;
-    min-width: 573px;
+    max-width: 573px;
     height: 100%;
     margin-bottom: 24px;
+    width: 100%;
   }
   .benefits__item--quality::before {
     content: "";
@@ -436,13 +507,63 @@
     margin-top: 30px;
   }
   .benefits__item-description {
-    width: 344px;
+    max-width: 344px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .benefits {
+    max-width: 327px;
+    max-height: 902px;
+  }
+  .benefits__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .benefits__description {
+    margin: 0;
+    max-width: 290px;
+    text-align: center;
+    transform: translateX(20px);
+  }
+  .benefits__item {
+    flex-direction: column;
+    width: 279px;
+    height: 382px;
+  }
+  .benefits__item-title {
+    text-align: center;
+  }
+  .benefits__item-description {
+    text-align: center;
+    max-width: 212px;
+    margin-left: 33px;
+  }
+  .benefits__list {
+    margin-left: 65px;
+  }
+  .benefits__wrapper {
+    margin: 0;
+  }
+  .benefits__item--quality::before {
+    display: block;
+    content: "";
+    margin-left: 110px;
+  }
+  .benefits__item--exclusive::before {
+    display: block;
+    content: "";
+    margin-left: 110px;
+  }
+  .benefits__item--shipping::before {
+    display: block;
+    content: "";
+    margin-left: 110px;
   }
 }
 .footer__site {
   background-color: #2C343E;
   display: flex;
-  margin-top: 216px;
+  transform: translateY(250px);
 }
 
 .footer__image {
@@ -457,6 +578,10 @@
 .footer__link {
   margin-left: 280px;
   margin-top: 1px;
+}
+
+.navbar {
+  margin-top: 37px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -483,6 +608,23 @@
     margin-left: 250px;
   }
 }
+@media only screen and (max-width: 720px) {
+  .footer__site {
+    width: 327px;
+  }
+  .footer__image {
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 54px;
+  }
+  .navbar {
+    margin: 0;
+    height: 20px;
+  }
+  .footer__link {
+    margin: 0;
+  }
+}
 .works__title {
   margin: 0px;
   font-family: "Fraunces";
@@ -491,7 +633,7 @@
   font-size: 24px;
   line-height: 32px;
   color: #83888F;
-  margin-top: 351px;
+  margin-top: 400px;
   margin-bottom: 178px;
   margin-left: 80px;
 }
@@ -605,6 +747,48 @@
     position: absolute;
     background-color: #FDD6BA;
     transform: translateY(-82px);
+  }
+  .works {
+    transform: translateX(120px);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .works__title {
+    text-align: center;
+    margin-top: 1050px;
+    margin-bottom: 80px;
+  }
+  .works__item::before {
+    display: none;
+  }
+  .works__list::before {
+    display: none;
+  }
+  .works__list {
+    flex-direction: column;
+  }
+  .works__item-title {
+    text-align: center;
+    max-width: 255px;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
+  .works__item-order {
+    margin-left: 100px;
+  }
+  .works__item-description {
+    margin: 0;
+    max-width: 327px;
+    text-align: center;
+  }
+  .works__item {
+    margin-bottom: 54px;
+  }
+  .works__link {
+    margin-left: 115px;
+    margin-top: 10px;
   }
 }
 .container {

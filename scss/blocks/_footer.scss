@@ -1,7 +1,7 @@
 .footer__site {
     background-color: #2C343E;
     display: flex;
-    margin-top: 216px;
+    transform: translateY(250px);
 }
 
 .footer__image {
@@ -19,6 +19,10 @@
     margin-top: 1px;
 }
 
+.navbar {
+    margin-top: 37px;
+}
+
 @media only screen and (max-width: 1280px) {
     .footer__site {
         display: block;
@@ -26,6 +30,7 @@
         height: 270px;
         margin: 0 auto;
         transform: translateY(160px);
+        
     }
 
     .footer__image {
@@ -45,4 +50,26 @@
         margin: 0;
         margin-left: 250px;
     }
+}
+
+@media only screen and (max-width: 720px) {
+    .footer__site {
+        width: 327px;
+    }
+
+    .footer__image {
+        margin: 0;
+        margin-left: 40px;
+        margin-top: 54px;
+    }
+
+    .navbar {
+        margin: 0;
+        height: 20px;
+    }
+
+    .footer__link {
+        margin: 0;
+    }
+
 }
